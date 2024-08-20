@@ -1,8 +1,10 @@
+### Issue Summary 
 
-### Summary of the Problem 
+**Duration of Outage**: From 18th August 2024 10:00 UTC to 8:00 UTC, it lasted for 1 hour and 30 minutes.
 
-**Duration of Outage**: From 18th August 2024 14:30 UTC to 16:00 UTC, it lasted for 1 hour and 30 minutes.
-**Impact**: Web app unavailable. All users were impacted by the service disruption. All GET requests resulted in a 500 Internal Server Error at the server.
+**Impact**: Users were unable to add, delete or read posts. Almost 95% of users impacted by the service disruption. All GET POST DELETE requests resulted in a 500 Internal Server Error at the server.
+
+**Root Cause**: The database outage caused a complete downtime in the Posts service.
 
 
 ### Timeline
