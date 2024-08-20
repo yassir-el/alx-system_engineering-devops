@@ -34,7 +34,7 @@
 **Resolution**: The issue was resolved by first running a temporary container using backups of the database. After identifying and fixing the misconfiguration in the old container, the original setup was restored, and the service returned to normal.
 
 
-### Root Cause and Resolution:
+### Corrective and Preventative Measures
 
 Such a code review process should be in place that any change in the code, especially relating to critical integrations, is checked thoroughly for any misconfiguration or error before deployment into the production environment.
 
