@@ -9,13 +9,15 @@
 
 ### Timeline
 
-- **08:05** - Issue detected
+- **08:05** - Issue detected by users.
 
-- **08:10** - Engineering team paged with the issue via the on-call alert system.
+- **08:10** - Engineering team informed with the issue via the on-call alert system.
 
-- **08:30** - The engineering team start Checked running processes 
+- **08:12** - The engineering team start checking services containers.
 
--**09:00**: The team discovered that the issue was related to the database that was down
+- **08:30** - Reviewing error logs to check where the error might be coming from.
+
+- **09:00** - The team discovered that the issue was related to the database that was down
 
 - **09:05** - Database team was alerted and joined the investigation
 
@@ -27,8 +29,9 @@
 
 ### Root Cause and Resolution
 
-**Root Cause**: Due to a recent code change, which introduced misconfiguration in one of the Database Query, this triggered an error overload of the database, resulting in a failure.
+**Root Cause**: Due to a recent code change, which introduced misconfiguration in one of the database queries, this triggered an error overloaded the database, resulting in a failure.
 
+**Resolution**: The issue was resolved by first running a temporary container using backups of the database. After identifying and fixing the misconfiguration in the old container, the original setup was restored, and the service returned to normal.
 
 
 ### Root Cause and Resolution:
